@@ -1,0 +1,11 @@
+length_ngram: 32
+cuda: False
+data_type :  'cqt'
+n_bins: 120
+bins_per_oct: 24
+fmin: 65.4
+hop_length: 1984
+step_size: 1
+mode: 'cosine'
+model_path: '...'
+out_dir:

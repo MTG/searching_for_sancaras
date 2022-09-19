@@ -1,0 +1,43 @@
+# configobj==5.0.6
+# fastdtw==0.3.4
+# matplotlib==3.1.1
+# numpy==1.16.4
+# numba==0.48
+# Pillow==6.2.0
+# soundfile
+# scikit-learn==0.21.2
+# scikit-image
+# scikit-build
+# #scipy
+# spleeter
+# #statsmodels==0.13.0
+# torch==1.0.0
+# torchvision==0.2.1
+# tqdm==4.32.2
+# lightgbm
+# librosa==0.7.0
+# mir-eval==0.5
+# numba==0.48
+# #opencv-python
+# pandas
+# pymysql
+# psycopg2
+# textgrid
+# zope
+# setuptools
+# wheel
+
+
+   
+configobj==5.0.6
+librosa==0.7.0
+matplotlib==3.1.1
+numpy==1.16.4
+Pillow==6.2.0
+scikit-learn==0.21.2
+scipy==1.3.0
+torch==1.0.0
+torchvision==0.2.1
+tqdm==4.32.2
+mir-eval==0.5
+pandas==0.22.0

@@ -1,0 +1,79 @@
+track_name: 'Sharanu Janakana'
+
+# Sample rate of audio
+sr: 44100
+
+# size in frames of cqt window from convolution model
+cqt_window: 1984 # was previously set to 1988
+
+# Take sample of data, set to None to use all data
+s1:  # lower bound index (5000 has been used for testing)
+s2:  # higher bound index (9000 has been used for testing)
+
+# pitch track extraction
+gap_interp: 0.25 # Interpolate pitch tracks gaps of <gap_interp>seconds or less [set to None to skip]
+
+# stability identification
+stab_hop_secs: 0.2 # window size for stab computations in seconds
+min_stability_length_secs: 1.0 # minimum legnth of region to be considered stable in seconds
+freq_var_thresh_stab: 10 # max variation in pitch to be considered stable region
+
+conv_filter_str: 'sobel'
+
+# Binarize raw sim array 0/1 below and above this value...
+# depends completely on filter passed to convolutional step
+# Best...
+#   scharr, 0.56
+#   sobel unidrectional, 0.1
+#   sobel bidirectional, 0.15
+bin_thresh: 0.16
+# lower bin_thresh for areas surrounding segments
+bin_thresh_segment: 0.08
+# percentage either size of a segment considered for lower bin thresh
+perc_tail: 0.5
+
+# Gaussian filter along diagonals with sigma...
+gauss_sigma: 
+
+# After gaussian, re-binarize with this threshold
+cont_thresh: 0.15
+
+# morphology params
+etc_kernel_size: 10 # For closing
+binop_dim: 3 # square dimension of binary opening structure (square matrix of zeros with 1 across the diagonal)
+
+# Distance between consecutive diagonals to be joined in seconds
+min_diff_trav: 0.5 #0.1
+
+# Grouping diagonals
+min_pattern_length_seconds: 2
+min_in_group: 1 # minimum number of patterns to be included in pattern group
+
+# Joining groups
+match_tol: 1 # 22==1 seconds
+# extend to silent/stability mask using this proportion of pattern
+ext_mask_tol: 0.5 
+
+n_dtw: 10 # number of samples to take from each group to compare dtw values
+thresh_dtw: 3.3 # if average dtw distance (per sequence) between two groups is below this threshold, group them
+thresh_cos:   # if average cos distance (per sequence) between two groups is below this threshold, group them
+# Two segments must overlap in both x and y by <dupl_perc_overlap> 
+# to be considered the same, only the longest is returned
+dupl_perc_overlap: 0.95
+
+# evaluation
+annotations_path: 'annotations/sharanu_janakana.txt'
+
+partial_perc: 0.66 # how much overlap does an annotated and identified pattern needed to be considered a partial match
+
+# limit the number of groups outputted
+top_n: 1000
+
+# output
+audio_path: 'path/to/audio.mp3' # must be defined if we want to write audio
+write_plots: True
+write_audio: True
+write_patterns: True
+write_annotations: True
+plot: False
+run_name: 'pipeline_test'

@@ -1,0 +1,4 @@
+min_stability_length_secs: 1
+stab_hop_secs: 0.2
+freq_var_thresh_stab: 8
+gap_interp: 0.250
