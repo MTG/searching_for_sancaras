@@ -10,7 +10,7 @@ Annotations documentation
 | 3845625a-e186-44c3-b8f9-b47c1ca155bb | Sumitra Vasudev - Vanajaksha Ninne Kori     | `vanajaksha_ninne_kori.txt` | Ritigowla |
 
 
-Ground-truth annotations of all sañcāras (musical phrases) in the audio recordings were created by a professional Carnatic vocalist, based in South India, with 21 years of performance experience. The annotations are written in the Indian music notation system, known as sargam, and were created using the software ELAN[1].
+Ground-truth annotations of all sañcāras (musical phrases) in the audio recordings were created by a professional Carnatic vocalist, based in South India, with 21 years of performance experience. The annotations are written in the Indian music notation system, known as sargam, and were created using the software ELAN [1].
 
 Sañcāras can be defined as coherent segments of melodic movement that follow the grammar of a particular rāga (melodic framework). There exists no definitive lists of all possible sañcāras in each rāga, rather the body of existing compositions and the living oral tradition of rāga performance act as repositories for that knowledge. Therefore, the segmentations are based on the annotator’s experience as a professional performer and student of a highly esteemed musical lineage. These annotations are subjective to some degree, but have the benefit of being based on expert performer knowledge rather than on an externally imposed metric that may be irrelevant to musical concepts held by culture bearers.
 
