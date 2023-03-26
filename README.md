@@ -14,7 +14,7 @@ The datasets and models presented in the paper are available at the following...
 
 | **Data**                     | **Description**                                                     | **Location**                                |
 |------------------------------|---------------------------------------------------------------------|---------------------------------------------|
-| Annotations                  | Expert annotations of 3 Carnatic performances in SCV                | [`annotations/`](https://github.com/searching-sancaras-ISMIR22/searching_for_sancaras/tree/main/annotations)              |
+| Annotations                  | Expert annotations of 3 Carnatic performances in SCV                | [`annotations/`]https://github.com/MTG/searching_for_sancaras/tree/main/annotations)              |
 | Saraga Carnatic Melody Synth | SCMS dataset of synthesized predominant pitch ground-truth          | [zenodo](https://zenodo.org/record/5553925) |
 | Saraga Carnatic Vocal        | SCV dataset of performances for which we have multitrack recordings | [link](url)								   |
 | CAE Model                    | Complex Autoencoder (CAE) trained on SCV                            | [link](url)                                 |
