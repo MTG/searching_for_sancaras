@@ -1,4 +1,7 @@
+**NOTE**: This code is available as part of the [compIAM](https://github.com/MTG/compIAM) package of computational tools for the analysis of Indian Art Music. The API there is much more user-friendly and maintained with regular updates. A notebook detailing how to apply it can be found [here](https://github.com/MTG/compIAM/blob/master/notebooks/melody/Melodic_Pattern_Finding_Carnatic.ipynb)
+
 ## In Search of Sañcāras - Tradition-Informed Repeated Melodic Pattern Recognition in Carnatic Music
+
 
 This repository contains the accompanying code for the ISMIR 2022 submission:
 
